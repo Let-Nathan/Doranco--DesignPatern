@@ -21,6 +21,6 @@ public final class DvdFactory implements DiskAbstractFactory {
     }
 
     public Disk createDisk() {
-        return new Dvd(DiskTypeEnnum.DVD.getType(), size, speedRead, speedWriting, readOnly);
+        return new Dvd(DiskTypeEnnum.DVD.getName(), size, speedRead, speedWriting, readOnly);
     }
 }
