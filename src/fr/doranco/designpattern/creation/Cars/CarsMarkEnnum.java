@@ -5,7 +5,7 @@ public enum CarsMarkEnnum {
 
     private String carsMark;
 
-    private CarsMarkEnnum(String carsMark) {
+    CarsMarkEnnum(String carsMark) {
         this.carsMark = carsMark;
     }
 

@@ -1,24 +1,28 @@
-package fr.doranco.designpattern.creation.tp3.factory;
+package fr.doranco.designpattern.creation.tp3.factory.computer;
 
 import fr.doranco.designpattern.creation.tp3.computer.Computer;
-import fr.doranco.designpattern.creation.tp3.computer.Pc;
+import fr.doranco.designpattern.creation.tp3.computer.Server;
 
-public final class PCFactory implements ComputerAbstractFactory {
+public final class ServerFactory implements ComputerAbstractFactory {
 
     private final String hdd;
     private final String ram;
     private final String cpu;
     private final String type;
 
-    public PCFactory(String hdd, String ram, String cpu, String type) {
+    public ServerFactory(String hdd, String ram, String cpu, String type) {
         this.hdd = hdd;
         this.ram = ram;
         this.cpu = cpu;
         this.type = type;
     }
 
+
+
+
+
     @Override
     public Computer createComputer() {
-        return new Pc(hdd, ram, cpu, type);
+        return new Server(ram, hdd, cpu, type);
     }
 }
