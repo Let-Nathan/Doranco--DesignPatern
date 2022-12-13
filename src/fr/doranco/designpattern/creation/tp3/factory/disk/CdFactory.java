@@ -22,6 +22,6 @@ public final class CdFactory implements DiskAbstractFactory {
     }
 
     public Disk createDisk () {
-      return new Cd(DiskTypeEnnum.CD.getType(), size, speedRead, speedWriting, readOnly);
+      return new Cd(size, speedRead, speedWriting, readOnly);
     }
 }

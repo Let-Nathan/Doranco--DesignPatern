@@ -9,7 +9,7 @@ public enum DiskTypeEnnum {
         this.type = type;
     }
 
-    public String getType() {
+    public String getName() {
         return this.type;
     }
 }
